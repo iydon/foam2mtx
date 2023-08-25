@@ -1,0 +1,3 @@
+solverHook.C
+
+LIB = $(FOAM_LIBBIN)/libsolverHook
