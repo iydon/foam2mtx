@@ -3,6 +3,11 @@
 
 # local
 /cache/
+
 /src/build/
 /src/lnInclude/
 /src/Make/linux*/
+
+/test/elbow.in/constant/polyMesh/
+/test/elbow.in/fluentInterface/
+/test/elbow.in/log.*
