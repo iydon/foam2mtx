@@ -1,0 +1,8 @@
+# global
+.vscode/
+
+# local
+/cache/
+/src/build/
+/src/lnInclude/
+/src/Make/linux*/
