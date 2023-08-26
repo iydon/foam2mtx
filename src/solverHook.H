@@ -6,6 +6,7 @@
 #include "PBiCG.H"
 #include "PBiCGStab.H"
 #include "PCG.H"
+
 #include "smoothSolver.H"
 
 using namespace Foam;
@@ -36,8 +37,6 @@ public:
         scalarField &psi,
         const scalarField &source,
         const direction cmpt = 0) const;
-
-    void operator=(const diagonalSolver &) = delete;
 };
 
 class GAMGSolverHook : public GAMGSolver
@@ -182,3 +181,4 @@ public:
 
 void ldu2mtx(const lduMatrix &, const word &);
 label next(const word &);
+word strize(label);
