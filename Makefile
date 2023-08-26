@@ -27,8 +27,8 @@ wmake:
 test:
 	# 7, 8, 9, 10
 	cd test/elbow.in/ && \
-		./Allrun && \
-		mv mtx/ ../elbow.out/
+		./Allrun
+	# mv mtx/ ../elbow.out/
 
 clean:
 	# cmake
