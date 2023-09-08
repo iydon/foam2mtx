@@ -10,6 +10,9 @@ cache = p.Path(__file__).parents[1] / 'cache'
 mtx = cache / 'mtx'
 spy = cache / 'spy'
 
+if spy.exists():
+    exit()
+
 for directory in mtx.iterdir():
     dst = spy / directory.name
     dst.mkdir(parents=True, exist_ok=True)

@@ -95,6 +95,8 @@ class Tutorial:
 
 if __name__ == '__main__':
     cache = p.Path(__file__).parents[1] / 'cache' / 'tutorial' / version
+    if cache.exists():
+        exit()
     for old in Tutorial.iterValids():
         new = old.copy(cache).hook()
         cp = new.all_run()
